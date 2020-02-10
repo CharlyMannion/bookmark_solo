@@ -1,7 +1,7 @@
 # bookmark_solo
 
 ## User Stories
-``
+```
 As a user,
 So I can have access to my favourite web pages
 I want to see a list of my bookmarks.
@@ -33,4 +33,4 @@ I want to filter my bookmarks by tag.
 As a user,
 So that only I can edit my bookmarks,
 I want to sign in before I can edit my bookmarks.
-``
+```
