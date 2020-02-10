@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rspec'
+gem 'pg'
 gem 'sinatra'
-gem 'capybara'
+
+gem 'capybara', group: :test
+gem 'rspec', group: :test
+
 gem 'rubocop'
 gem 'simplecov', '~> 0.12.0'
