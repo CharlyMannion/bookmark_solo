@@ -4,7 +4,9 @@ A web app that allows users to store bookmarks, using a database.
 ## Instructions
 
 Clone the repo:
+```sh
 `git clone https://github.com/CharlyMannion/bookmark_solo`
+```
 
 Ruby Version:
 ```sh
