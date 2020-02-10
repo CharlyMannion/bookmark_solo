@@ -57,8 +57,4 @@ I want to add category tags to my bookmarks.
 As a user,
 So I can see similar bookmarks together,
 I want to filter my bookmarks by tag.
-
-As a user,
-So that only I can edit my bookmarks,
-I want to sign in before I can edit my bookmarks.
 ```
