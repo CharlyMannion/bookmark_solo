@@ -29,7 +29,7 @@ http://localhost:9292/
 ```
 
 ## Connecting to the Database
-* Use Homebrew to install the package
+### Use Homebrew to install the package
 
 We can use the package manager Homebrew to start the install of PostgreSQL:
 
@@ -39,7 +39,7 @@ $ brew install postgresql
 
 After Homebrew has downloaded PostgreSQL it will show you some installation instructions: follow them!
 
-* Allow Homebrew to start and stop the Postgres service
+### Allow Homebrew to start and stop the Postgres service
 
 PostgreSQL is a database management service. It's handy to keep PostgreSQL running 'in the background'. This command will start PostgreSQL in the background and restart it when you login:
 
@@ -47,7 +47,7 @@ PostgreSQL is a database management service. It's handy to keep PostgreSQL runni
 $ brew services start postgresql
 ```
 
-* Interact with the PostgreSQL database management system
+### Interact with the PostgreSQL database management system
 
 PostgreSQL provides a built-in interface, called `psql`. It's a command-line tool that allows you to interact with databases. You can think of it like IRB: it's a REPL. Where IRB gives you a Ruby interface, `psql`'s interface uses a different language: 'Structured Query Language', or **SQL**.
 
@@ -67,7 +67,7 @@ NOTE: You may need to create a database to use psql
 createdb "your_user_name_here"
 ```
 
-* Create a database using SQL
+### Create a database using SQL
 
 Now that we're in the `psql` REPL environment, let's create the Bookmark Manager database using SQL:
 
