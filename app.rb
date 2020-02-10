@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
   get '/' do
@@ -6,12 +7,8 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks' do
-    bookmarks = [
-      "https://www.picturehouses.com/cinema/city-screen-picturehouse",
-      "https://loveinternationalfestival.com/buy-tickets/",
-      "https://www.bbc.co.uk/weather/2641776"
-    ]
-    bookmarks.join
+    @bookmarks = Bookmark.all
+    erb :'bookmarks/index'
   end
 
   # start the server if ruby file executed directly
