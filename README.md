@@ -115,6 +115,16 @@ Now inspect the list of tables again, using `\dt`. You should see one with the n
 
 Run the query we have saved in the file `01_create_bookmarks_table.sql`
 
+### Add test url's to the database
+
+Run psql
+```
+INSERT INTO bookmarks (url) VALUES ('https://www.picturehouses.com');
+INSERT INTO bookmarks (url) VALUES ('https://loveinternationalfestival.com');
+```
+```
+INSERT INTO bookmarks (url) VALUES ('https://www.bbc.co.uk/weather/2641776');
+```
 
 ## User Stories
 ```

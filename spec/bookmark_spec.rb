@@ -5,8 +5,8 @@ describe Bookmark do
     it 'returns all bookmarks' do
       bookmarks = Bookmark.all
 
-      expect(bookmarks).to include("https://www.picturehouses.com/cinema/city-screen-picturehouse")
-      expect(bookmarks).to include("https://loveinternationalfestival.com/buy-tickets/")
+      expect(bookmarks).to include("https://www.picturehouses.com")
+      expect(bookmarks).to include("https://loveinternationalfestival.com")
       expect(bookmarks).to include("https://www.bbc.co.uk/weather/2641776")
     end
   end
