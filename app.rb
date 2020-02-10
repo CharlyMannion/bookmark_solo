@@ -6,7 +6,12 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks' do
-    "https://www.picturehouses.com/cinema/city-screen-picturehouse"
+    bookmarks = [
+      "https://www.picturehouses.com/cinema/city-screen-picturehouse",
+      "https://loveinternationalfestival.com/buy-tickets/",
+      "https://www.bbc.co.uk/weather/2641776"
+    ]
+    bookmarks.join
   end
 
   # start the server if ruby file executed directly
