@@ -117,7 +117,7 @@ Run the query we have saved in the file `01_create_bookmarks_table.sql`
 
 ### Add test url's to the database
 
-Run psql
+Run psql, then add the url's to the bookmarks table by running the following three commands:
 ```
 INSERT INTO bookmarks (url) VALUES ('https://www.picturehouses.com');
 INSERT INTO bookmarks (url) VALUES ('https://loveinternationalfestival.com');
