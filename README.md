@@ -124,6 +124,11 @@ INSERT INTO bookmarks (url) VALUES ('https://loveinternationalfestival.com');
 INSERT INTO bookmarks (url) VALUES ('https://www.bbc.co.uk/weather/2641776');
 ```
 
+To check the table contains the url's, run:
+```
+SELECT * FROM bookmarks;
+```
+
 ## User Stories
 ```
 As a user,
