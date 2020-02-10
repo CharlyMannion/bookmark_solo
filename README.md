@@ -111,13 +111,24 @@ bookmark_manager=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60)
 
 Now inspect the list of tables again, using `\dt`. You should see one with the name `bookmarks`.
 
+
+### Set up a test database
+
+Now we need to build a test environment, including a test database, so that our tests do not fail when data is added to the database.
+
+```
+$> psql
+admin=# CREATE DATABASE "bookmark_manager_test";
+admin=# CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+```
+
 ### Run the query
 
 Run the query we have saved in the file `01_create_bookmarks_table.sql`
 
-### Add test url's to the database
+### Add test url's to the test database
 
-Run psql, then add the url's to the bookmarks table by running the following three commands:
+Run psql, then add the url's to the bookmarks table, in the "bookmark_manager_test" database by running the following three commands:
 ```
 INSERT INTO bookmarks (url) VALUES ('https://www.picturehouses.com');
 INSERT INTO bookmarks (url) VALUES ('https://loveinternationalfestival.com');
