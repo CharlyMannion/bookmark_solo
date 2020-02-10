@@ -129,6 +129,32 @@ To check the table contains the url's, run:
 SELECT * FROM bookmarks;
 ```
 
+## Add TablePlus
+
+Install [TablePlus](https://tableplus.io/), to get a better picture of the database and interact with it more easily.
+
+### Installing TablePlus
+
+To install the program:
+
+- Download TablePlus.
+- Drag the TablePlus app into your `/Applications` directory.
+- Double-click to start it.
+
+### Connect TablePlus to your PostgreSQL database management system
+
+TablePlus needs to know some details about your Postgres server. In particular, it needs to know:
+
+- Where it is;
+- What login details are required;
+- What database it should start with.
+
+We have answers for all three:
+
+- `localhost` (i.e. your PostgreSQL server is running 'backgrounded' on your local machine, on Port 5432)
+- Your computer's name as a username (or, you can find this out by listing databases in `psql`), and no password
+- The `bookmark_manager` database.
+
 ## User Stories
 ```
 As a user,
