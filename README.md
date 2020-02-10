@@ -1,4 +1,30 @@
 # bookmark_solo
+A web app that allows users to store bookmarks, using a database.
+
+## Instructions
+
+Clone the repo:
+`git clone https://github.com/CharlyMannion/bookmark_solo`
+
+Ruby Version:
+```sh
+2.5.0
+```
+
+Run:
+```sh
+bundle install
+```
+
+To see the app in your web browser:
+```sh
+rackup
+```
+
+Then go to:
+```sh
+http://localhost:9292/
+```
 
 ## User Stories
 ```
