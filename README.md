@@ -121,8 +121,6 @@ Run psql
 ```
 INSERT INTO bookmarks (url) VALUES ('https://www.picturehouses.com');
 INSERT INTO bookmarks (url) VALUES ('https://loveinternationalfestival.com');
-```
-```
 INSERT INTO bookmarks (url) VALUES ('https://www.bbc.co.uk/weather/2641776');
 ```
 
