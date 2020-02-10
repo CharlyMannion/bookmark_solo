@@ -58,3 +58,6 @@ As a user,
 So I can see similar bookmarks together,
 I want to filter my bookmarks by tag.
 ```
+
+## Domain Model
+![Bookmark Manager domain model](../images/bookmark_manager_1.png)
