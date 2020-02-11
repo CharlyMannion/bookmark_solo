@@ -7,17 +7,17 @@ describe Bookmark do
 
       bookmarks = Bookmark.all
 
-      expect(bookmarks).to include("https://www.picturehouses.com")
-      expect(bookmarks).to include("https://loveinternationalfestival.com")
-      expect(bookmarks).to include("https://www.bbc.co.uk/weather/2641776")
+      expect(bookmarks.length).to eq(3)
+      expect(bookmarks.first).to be_a Bookmark
     end
   end
 
   describe '.create' do
     it 'creates a new bookmark' do
-      Bookmark.create(url: "https://everymancinema.com")
+      test_bookmark = Bookmark.create(title: 'Everyman', url: "https://everymancinema.com").first
 
-      expect(Bookmark.all).to include("https://everymancinema.com")
+      expect(test_bookmark['url']).to eq("https://everymancinema.com")
+      expect(test_bookmark['title']).to eq('Everyman')
     end
   end
 end
