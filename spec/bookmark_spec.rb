@@ -12,4 +12,12 @@ describe Bookmark do
       expect(bookmarks).to include("https://www.bbc.co.uk/weather/2641776")
     end
   end
+
+  describe '.create' do
+    it 'creates a new bookmark' do
+      Bookmark.create(url: "https://everymancinema.com")
+
+      expect(Bookmark.all).to include("https://everymancinema.com")
+    end
+  end
 end
