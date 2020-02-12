@@ -9,9 +9,6 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks' do
-    # restful route to take a look at bookmarks
-    p ENV
-
     @bookmarks = Bookmark.all
     erb :'bookmarks/index'
   end
