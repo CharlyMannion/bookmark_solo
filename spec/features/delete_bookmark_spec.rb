@@ -3,6 +3,11 @@ feature 'Deleting a bookmark' do
     add_test_data
 
     visit('/bookmarks')
-    click_button 'Delete'
+    expect(page).to have_link('Picturehouse York', href: 'https://www.picturehouses.com')
+
+    first('.bookmark').click_button 'Delete'
+
+    expect(current_path).to eq '/bookmarks'
+    expect(page).not_to have_link('Picturehouse York', href: 'https://www.picturehouses.com')
   end
 end
