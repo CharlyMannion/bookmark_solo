@@ -23,4 +23,14 @@ describe Bookmark do
       expect(test_bookmark).to be_a(Bookmark)
     end
   end
+
+  describe '.delete' do
+    it 'deletes the selected bookmark' do
+      bookmark = Bookmark.create(title: 'Everyman', url: "https://everymancinema.com")
+
+      Bookmark.delete(id: bookmark.id)
+
+      expect(Bookmark.all.length).to eq(0)
+    end
+  end
 end
