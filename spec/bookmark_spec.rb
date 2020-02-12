@@ -20,6 +20,7 @@ describe Bookmark do
 
       expect(test_bookmark.url).to eq("https://everymancinema.com")
       expect(test_bookmark.title).to eq('Everyman')
+      expect(test_bookmark).to be_a(Bookmark)
     end
   end
 end
