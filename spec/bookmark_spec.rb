@@ -33,4 +33,13 @@ describe Bookmark do
       expect(Bookmark.all.length).to eq(0)
     end
   end
+
+  describe '.update' do
+    it 'updates the selected bookmark' do
+      bookmark = Bookmark.create(title: 'Everyman', url: "https://everymancinema.com")
+      updated_bookmark = Bookmark.update(id: bookmark.id, title: 'Everyman York', url: "https://everymancinema.com/york")
+
+      expect(updated_bookmark).to be_a(Bookmark)
+    end
+  end
 end
