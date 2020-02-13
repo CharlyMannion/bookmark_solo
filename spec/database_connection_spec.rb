@@ -20,7 +20,7 @@ describe DatabaseConnection do
 
       expect(connection).to receive(:exec).with("SELECT * FROM bookmarks;")
 
-      DatabaseConnection.query("SELECT * FROM bookmarks;") 
+      DatabaseConnection.query("SELECT * FROM bookmarks;")
     end
   end
 end
