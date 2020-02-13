@@ -40,6 +40,19 @@ describe Bookmark do
       updated_bookmark = Bookmark.update(id: bookmark.id, title: 'Everyman York', url: "https://everymancinema.com/york")
 
       expect(updated_bookmark).to be_a(Bookmark)
+      expect(updated_bookmark.id).to eq(bookmark.id)
+      expect(updated_bookmark.title).to eq('Everyman York')
+      expect(updated_bookmark.url).to eq('https://everymancinema.com/york')
     end
   end
+
+  # describe '.find' do
+  #   it 'returns the requested bookmark object' do
+  #     bookmark = Bookmark.create(title: 'Everyman', url: "https://everymancinema.com")
+  #
+  #     result = Bookmark.find(id: bookmark.id)
+  #
+  #
+  #   end
+  # end
 end
