@@ -34,7 +34,7 @@ class BookmarkManager < Sinatra::Base
     erb :'bookmarks/edit'
   end
 
-  put '/bookmarks/:id' do
+  patch '/bookmarks/:id' do
   p params
   redirect('/bookmarks')
 end
