@@ -46,13 +46,13 @@ describe Bookmark do
     end
   end
 
-  # describe '.find' do
-  #   it 'returns the requested bookmark object' do
-  #     bookmark = Bookmark.create(title: 'Everyman', url: "https://everymancinema.com")
-  #
-  #     result = Bookmark.find(id: bookmark.id)
-  #
-  #
-  #   end
-  # end
+  describe '.find' do
+    it 'returns the requested bookmark object' do
+      bookmark = Bookmark.create(title: 'Everyman', url: "https://everymancinema.com")
+
+      result = Bookmark.find(id: bookmark.id)
+
+      expect(result).to be_a(Bookmark)
+    end
+  end
 end
