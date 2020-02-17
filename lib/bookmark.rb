@@ -4,8 +4,8 @@ require_relative 'database_connection'
 class Bookmark
 
   def self.all
-    bookmarks = DatabaseConnection.query("SELECT * FROM bookmarks;")
-    bookmarks.map do |bookmark|
+    result = DatabaseConnection.query("SELECT * FROM bookmarks")
+    result.map do |bookmark|
       Bookmark.new(
         url: bookmark['url'],
         title: bookmark['title'],
