@@ -16,6 +16,8 @@ describe Bookmark do
   describe '.create' do
     it 'creates a new bookmark' do
       test_bookmark = Bookmark.create(title: 'Everyman', url: "https://everymancinema.com")
+      p "test bookmark below"
+      p test_bookmark.url
       persisted_data = persisted_data(id: test_bookmark.id)
 
       expect(test_bookmark.url).to eq("https://everymancinema.com")
@@ -50,6 +52,11 @@ describe Bookmark do
     it 'returns the requested bookmark object' do
       bookmark = Bookmark.create(title: 'Everyman', url: "https://everymancinema.com")
 
+      p "in find"
+      p bookmark
+      p Bookmark
+      p Bookmark.find(id: 1)
+      p bookmark.id
       result = Bookmark.find(id: bookmark.id)
 
       expect(result).to be_a(Bookmark)
