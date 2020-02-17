@@ -52,6 +52,11 @@ describe Bookmark do
     it 'returns the requested bookmark object' do
       bookmark = Bookmark.create(title: 'Everyman', url: "https://everymancinema.com")
 
+      p "in find"
+      p bookmark
+      p Bookmark
+      p Bookmark.find(id: 1)
+      p bookmark.id
       result = Bookmark.find(id: bookmark.id)
 
       expect(result).to be_a(Bookmark)
